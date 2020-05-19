@@ -18,9 +18,9 @@ For our purposes, an `Author` has many `Article`s, a `Magazine` has many `Articl
 - Object Relationships
 - Arrays and Array Methods
 
-## Instructions
+## Instructionsx
 
-To get started, run `bundle install` while inside of this directory.
+To get started, run `bundle install` while inside of this directory. x 
 
 Build out all of the methods listed in the deliverables. The methods are listed in a suggested order, but you can feel free to tackle the ones you think are easiest. Be careful: some of the later methods rely on earlier ones.
 

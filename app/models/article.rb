@@ -15,7 +15,9 @@ class Article
         @@all
     end
 
+    # def 
 
+    # end
 
 
 end

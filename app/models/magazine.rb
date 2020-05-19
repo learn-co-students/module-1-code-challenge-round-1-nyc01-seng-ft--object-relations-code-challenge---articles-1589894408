@@ -32,11 +32,12 @@ class Magazine
     end
   end
 
-  def articles_by
-    contributors.map do |by|
-      by.author
-    end
-  end
+  # def articles_by
+  #   article_num = 0
+  #   contributors.each do |by|
+  #     by.magazine == self
+  #   end
+  # end
 
   # def magazine_art
   #   magazines_auth.select do |article|
@@ -44,6 +45,8 @@ class Magazine
   #   end
   # end
 
+  # not working
+  
   def contributing_authors
     contributors.select do |contrib_author|
       contrib_author.author.count > 2

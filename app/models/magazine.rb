@@ -16,6 +16,22 @@ class Magazine
    self.articles.map { |a| a.author }
   end
 
+  def article_titles
+    self.article.map { |a| a.title }
+  end
+
+  def contributing_authors
+    author_count = Hash.new
+      self.countributors.each do |author|
+    if author_count[author]
+       author_count[author] += 1
+    else
+       author_count[author] = 1
+    end
+ end
+   author_count
+  end
+
   def self.find_by_name(name)
    Magazine.all.find{ |m| m.name == name}
   end

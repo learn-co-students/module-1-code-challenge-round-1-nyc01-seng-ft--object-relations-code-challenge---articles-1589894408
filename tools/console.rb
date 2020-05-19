@@ -16,6 +16,7 @@ require './app/models/magazine.rb'
 atl = Magazine.new("The Atlantic", "Literature")
 jgardner = Author.new("John Gardner")
 artone = Article.new("John Gardner", "The Atlantic", "How to write a class lol")
+arttwo = Article.new(jgardner, atl, "tester")
 
 
 

@@ -1,10 +1,12 @@
 class Author
   attr_reader :name
+  attr_accessor :area_of_exp
   @@all = []
 
 
   def initialize(name)
     @name = name
+    @area_of_exp =[]
     @@all << self
   end
 
@@ -22,8 +24,16 @@ class Author
     self.articles.uniq
   end 
 
-  def add_article(magazine, title)
+  def add_article(magazine, title) #checks and works
     Article.new(self, magazine, title)
   end 
 
-end
+  def topic_areas #omg omg omg it works
+    Article.all.each do |article|
+      if article.author == self 
+        @area_of_exp.push(article.magazine.category)
+      end 
+    end 
+    @area_of_exp
+  end 
+end 

@@ -14,7 +14,4 @@ class Article
         @@all
     end
 
-    # def author
-    #     self.all.map { |ar| ar.author}
-    # end
 end

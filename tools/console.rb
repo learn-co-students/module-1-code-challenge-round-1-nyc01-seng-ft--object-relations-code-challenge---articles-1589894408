@@ -11,7 +11,7 @@ author1 = Author.new("Author1")
 author2 = Author.new("Author2")
 author3 = Author.new("Author2")
 author4 = Author.new("Author4")
-
+#
 magazine1 = Magazine.new("Magazine1", "category1")
 magazine2 = Magazine.new("Magazine2", "category2")
 magazine3 = Magazine.new("Magazine3", "category3")

@@ -24,6 +24,7 @@ biotech = Article.new(author1, wired, "Biotech in 2020")
 hundred = Article.new(author2, forbes, "Forbes 100")
 apple = Article.new(author2, wired, "New iphone")
 mic = Article.new(author2, wired, "Microsoft")
+hack = Article.new(author2, wired, "Hacking")
 
 
 

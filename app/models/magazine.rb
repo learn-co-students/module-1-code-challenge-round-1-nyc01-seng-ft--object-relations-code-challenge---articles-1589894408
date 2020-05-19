@@ -26,4 +26,22 @@ class Magazine
     end.uniq #didn't ask for unique but figure we don't want to return an author twice for same mag..
   end
 
+  def self.find_by_name(name)
+    Magazine.all.find do |magazine|
+      magazine.name == name
+    end
+  end
+
+  def article_titles
+    articles.map do |article|
+      article.title
+    end
+  end
+
+  def contributing_authors
+    contributors.select do |author|
+      author.articles.count > 2
+    end
+  end
+
 end

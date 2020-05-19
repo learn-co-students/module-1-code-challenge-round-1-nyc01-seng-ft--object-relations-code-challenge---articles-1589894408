@@ -25,4 +25,8 @@ class Magazine
     Article.all.map { |ar| ar.title}
   end
 
+  def contributing_authors
+    
+  end
+
 end

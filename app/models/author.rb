@@ -31,6 +31,7 @@ class Author
           mgz << art.magazine
         end
       end
+      mgz
     end
 
     def add_article(magazine, title)
@@ -44,5 +45,13 @@ class Author
     # - `Author#topic_areas`
     #   - Returns a **unique** array of strings with the categories of the 
     #magazines the author has contributed to
-    Article.all
+    areas=[]
+    Article.all.each do |art|
+      if art.author== self
+        areas << art.magazine.category
+      end
+    end
+    areas
+  end
+
 end

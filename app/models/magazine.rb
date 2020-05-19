@@ -31,8 +31,53 @@ class Magazine
       athr << art.author
     end
   end
+  athr
 end
+    def find_by_name(name)
+    # - `Magazine.find_by_name(name)`
+    #   - Given a string of magazine's name, this method returns the first magazine object that matches
+      
+    
+    # all.find do |mgz| 
+      #   mgz.name==name
+      # end
 
+      #single source of truth!
+      val=nil
+      Article.all.find do |art|
+        art.magazine.name==name
+      end.each do |art| 
+        val=art.magazine
+      end
+      val
+    end
 
+    def article_titles
+    # - `Magazine#article_titles`
+    #   - Returns an array strings of the titles of all articles written for that magazine
+    titlez=[]
+    Article.all.each do |art|
+      if art.magazine==self
+       titlez << art.title
+      end
+    end
+  end
 
+    def contributing_authors
+    # - `Magazine#contributing_authors`
+    #   - Returns an array of authors who have written more than 2 articles for the magazine
+    
+    authors=[]
+    contributors.each do |cont|
+      counter=0
+      cont.each do |cont1|
+       if  cont1==cont
+        counter +=1
+      end
+    end
+      if counter>2
+        authors << cont.name
+      end
+    end
+  end
 end

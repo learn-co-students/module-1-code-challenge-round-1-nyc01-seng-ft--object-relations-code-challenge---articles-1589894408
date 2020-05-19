@@ -24,11 +24,6 @@ article6 = Article.new(author2,magazine1,"first post")
 
 
 
-
-
-
-
-
 ### DO NOT REMOVE THIS
 binding.pry
 

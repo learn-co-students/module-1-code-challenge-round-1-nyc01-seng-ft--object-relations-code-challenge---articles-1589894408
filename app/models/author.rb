@@ -7,7 +7,7 @@ class Author
       ##even tho they are not asking for ALL author instances as a reader method im following single source of truth 
   end
 
-  def self.all
+  def self.all #i know it's not a deliverable
     @@all
   end
 

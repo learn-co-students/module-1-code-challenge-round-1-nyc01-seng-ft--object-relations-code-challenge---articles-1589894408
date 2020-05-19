@@ -15,7 +15,7 @@ class Magazine
     @@all 
   end 
 
-  def contributors #ok this checks and works
+  def contributors #ok this checks and works, may need to += 1 a count for each author so as to better access on #contributing_authors
     Article.all.each do |article|
       if article.magazine == self.name 
         @writers.push(article.author)
@@ -48,3 +48,11 @@ class Magazine
   end 
 
 end
+
+
+#new idea for contributing author 
+# def contributing author
+# Author.all.map do |author|
+# author.articles.count > 2
+#end 
+#end 

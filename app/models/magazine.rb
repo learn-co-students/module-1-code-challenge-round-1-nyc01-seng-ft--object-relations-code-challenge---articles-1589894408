@@ -17,13 +17,13 @@ class Magazine
   end
 
   def article_titles
-    self.article.map { |a| a.title }
+    self.articles.map { |a| a.title }
   end
 
   def contributing_authors
     author_count = Hash.new(0)
-    self.countributors.each { |author| author_count[author] += 1 }
-    author_count.select{ |k, v| v > 1}
+    self.contributors.each { |author| author_count[author] += 1 }
+    author_count.select{ |k, v| v > 1 ? k : nil}.map { |k, v| k }
   end
 
   def self.find_by_name(name)

@@ -34,16 +34,10 @@ class Magazine
     self.articles.map do |article|
       article.title
     end
-
   end
 
   def contributing_authors
-
+    
   end
-
-
- 
-
-  
 
 end

@@ -14,9 +14,9 @@ author = Author.new("G-eazy")
 author1 = Author.new("Pop Smoke")
 author2 = Author.new("Lil Pump")
 
-article = Article.new(author, magazine, "Welcome to party")
-article1 = Article.new(author1, magazine, "Dior")
-article2 = Article.new(author2, magazine2, "Element")
+ Article.new(author, magazine, "Welcome to party")
+ Article.new(author1, magazine, "Dior")
+ Article.new(author2, magazine2, "Element")
 
 
 

@@ -18,9 +18,12 @@ class Author
     end 
   end 
 
-  def magazines #works but returns an arrray of articles not an array of magazines so come back later
+  def magazines #works but returns an array of articles not an array of magazines so come back later
     self.articles.uniq
   end 
 
+  def add_article(magazine, title)
+    Article.new(self, magazine, title)
+  end 
 
 end

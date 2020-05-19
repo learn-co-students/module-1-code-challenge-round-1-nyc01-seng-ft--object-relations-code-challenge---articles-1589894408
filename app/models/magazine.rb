@@ -40,12 +40,9 @@ class Magazine
 
 
   def contributing_authors
-    matching_articles = self.articles.select do |article|
-        article.count(author) > 2
-    end
-    matching_articles.map do |articles|
-      articles.author
-    end
+    self.contributors.select do |authors|
+        self.contributors.count(authors) > 2
+    end.uniq
   end
 
 

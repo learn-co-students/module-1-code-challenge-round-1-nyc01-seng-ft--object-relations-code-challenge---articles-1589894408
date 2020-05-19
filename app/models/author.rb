@@ -23,7 +23,7 @@ class Author
   def add_article(magazine_instance, title_string)
     Article.new(self, magazine_instance, title_string)
   end
-  
+
   def topic_areas
     self.magazines.map do |magazine|
       magazine.category     

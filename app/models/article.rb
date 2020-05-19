@@ -13,4 +13,8 @@ class Article
     def self.all
         @@all
     end
+
+    # def author
+    #     self.all.map { |ar| ar.author}
+    # end
 end

@@ -19,6 +19,7 @@ article2 = Article.new(bob, people, "Beautiful People")
 article3 = Article.new(jake, si, "Baseball")
 article4 = Article.new(jake, time, "Hockey")
 article5 = Article.new(jake, si, "Wrestling")
+article5 = Article.new(bob, si, "Hello")
 
 
 

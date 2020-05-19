@@ -38,18 +38,20 @@ class Magazine
     title_array
   end
 
-  def contributor_names
-    contributors.map do |instance|
-      instance.name
+  # def contributor_names #=> set as helper
+  #   contributors.map do |instance|
+  #     instance.name
+  #   end
+  # end
+
+  def contributing_authors #=> I know this doesn't work. Ran out of time for tinkering
+    empty = []
+    contributors.find do |instance|
+      empty <<instance.name
+    end
+    if empty.count > 2
+      return empty
     end
   end
-
-  def contributing_authors
-    contributors.find_all do |instance|
-      if instance.name.count > 2
-        instance name
-       end
-     end
-   end
 
 end

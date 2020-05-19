@@ -38,7 +38,7 @@ class Magazine
        ca[c] ||= 0
        ca[c] += 1
     end
-    ca.select{|k,v| v >= 2}
+    ca.select{|k,v| v > 2}
   end
 
 end

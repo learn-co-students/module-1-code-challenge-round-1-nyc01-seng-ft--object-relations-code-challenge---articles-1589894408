@@ -33,12 +33,15 @@ class Magazine
     end
   end
 
-  # def contributing_authors 
-  #   # returns an array of authors who have written more than 2 articles for the magazine 
-  #   contributors.select do |contributor|
-  #     contributor.
-  #   end 
-  # end 
+  def contributing_authors 
+    # returns an array of authors who have written more than 2 articles for the magazine 
+    arr = [] 
+    articles.each do |article|
+      arr << article.author  
+    end
+    arr  
+    # arr = an array of authors that have written an article for this magazine
+  end 
 
   def self.find_by_name(name)
     # given a string of a magazine's name, this method returns the first magazine object that matches
@@ -48,6 +51,3 @@ class Magazine
   end
 
 end
-
-# - `Magazine#contributing_authors`
-#   - Returns an array of authors who have written more than 2 articles for the magazine

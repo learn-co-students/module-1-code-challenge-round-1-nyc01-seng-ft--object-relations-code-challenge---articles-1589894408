@@ -22,7 +22,6 @@ class Article
         Article.all.find do |article|
             article.title == self
         end
-        # doesn't work
     end
 
     def self.magazine

@@ -20,6 +20,10 @@ class Author
       end.uniq
     end
     def topic_areas
+#  Returns a **unique** array of strings 
+# with the categories of the magazines the a
+# uthor has contributed to
+
 
     end
 end

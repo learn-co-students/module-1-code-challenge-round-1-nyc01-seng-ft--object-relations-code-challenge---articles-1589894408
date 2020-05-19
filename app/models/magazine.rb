@@ -28,6 +28,14 @@ class Magazine
     end
   end
   def contributing_authors
+    # - Returns an array of 
+    # have written more than 2 articles for
+    #  the magazine
+    contributors.all.each do |m|
+      m.article.conut
+      if m.article.count > 2
+        
+      end
   end
 
 

@@ -1,6 +1,6 @@
 class Author
   attr_reader :name
-  attr_accessor :area_of_exp
+  attr_accessor :area_of_exp, :count 
   @@all = []
 
 
@@ -21,7 +21,7 @@ class Author
   end 
 
   def magazines #works but returns an array of articles not an array of magazines so come back later
-    self.articles.uniq
+    self.articles.uniq 
   end 
 
   def add_article(magazine, title) #checks and works

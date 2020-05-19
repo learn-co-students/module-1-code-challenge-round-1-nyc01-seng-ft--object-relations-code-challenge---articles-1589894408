@@ -8,7 +8,8 @@ class Magazine
   end
 
   #helper method
-  #returns an array of all articles that are part of the magazine
+  #returns an array of all articles that are 
+  #part of the current magazine instance
   def articles 
     Article.all.select{|x| x.magazine == self}
   end

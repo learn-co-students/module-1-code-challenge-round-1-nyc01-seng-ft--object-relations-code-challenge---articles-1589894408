@@ -20,17 +20,28 @@ class Magazine
       art_ins.magazine == self
     end
   end 
+  #2 steps, list mag articles, iterate thru mag articles to find authors
+
+  def find_by_name(name)
+    self.all.first do |mag_ins|
+      mag_ins.name == name
+    end
+  end 
+  # - Given a string of magazine's name, this method 
+  # # returns the first magazine object that matches
 
 
-  # def contributors  #2 steps, list mag articles, iterate thru mag articles to find authors
-  # end
+  
+  
+ 
 
 
 
 end
 
 # - `Magazine.find_by_name(name)`
-#   - Given a string of magazine's name, this method returns the first magazine object that matches
+#   - Given a string of magazine's name, this method 
+# returns the first magazine object that matches
 # - `Magazine#article_titles`
 #   - Returns an array strings of the titles of all articles written for that magazine
 # - `Magazine#contributing_authors`

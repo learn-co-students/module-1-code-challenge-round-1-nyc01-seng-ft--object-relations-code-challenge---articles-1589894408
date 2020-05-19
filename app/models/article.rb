@@ -14,6 +14,18 @@ class Article
 
 
     def author 
+        self.find do |article_instance|
+            article_instance.author == author
+        end
+    end
+
+    def magazine 
+        self.find do |article_instance|
+            article_instance.magazine == magazine
+        end
+    end.to_s
+        
+
 
 
 

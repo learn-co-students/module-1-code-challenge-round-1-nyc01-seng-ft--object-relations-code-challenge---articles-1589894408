@@ -1,4 +1,4 @@
-class Article
+class Article 
 
     attr_reader :author, :magazine, :title
 
@@ -6,12 +6,10 @@ class Article
         @author = author
         @magazine = magazine
         @title = title
+        #binding.pry
     end
 
-    def self.author
-        self
-    end
-
+    
 end
 
 #### Article

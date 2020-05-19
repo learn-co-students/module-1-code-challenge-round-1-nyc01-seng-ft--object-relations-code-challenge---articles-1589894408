@@ -6,11 +6,27 @@ class Magazine
     @name = name
     @category = category
     @@all << self
+    #add all your magazine instances to this class variable
+    #binding.pry
   end
 
+  def name
+    @name
+  end
+  
+  def all_mags(category)
+  
+  end
 
+  def article_titles
+  
+  end
 
+  def contributing_authors
 
+  end
+
+binding.pry
 end
 #### Magazine
 

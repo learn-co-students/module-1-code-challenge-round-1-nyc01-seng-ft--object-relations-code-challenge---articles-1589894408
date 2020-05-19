@@ -1,14 +1,28 @@
-class Author
+class Author 
   
   attr_accessor :name
-
+  @@all = []
 
   def initialize(name)
     @name = name
-  
+    @@all << @name
+    #binding.pry
   end
 
+  # def self.author
+  #   self
+  # end
 
+  # def my_articles(author)
+  #   self.author.map do |author|
+  #     author.article == article
+  #     binding.pry
+  #   end
+  # end
+
+  def add_article
+
+  end
 end
 
 

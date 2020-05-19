@@ -19,6 +19,7 @@ auth3 = Author.new("Issa Rae")
 art1 = Article.new(auth1,mag1, "Urband Jungle")
 art2 = Article.new(auth2,mag2, "Are the Dragons Gone?")
 art3 = Article.new(auth3,mag3, "Hella Confused")
+art4 = Article.new(auth1,mag1, "Calathea Plants")
 
 
 

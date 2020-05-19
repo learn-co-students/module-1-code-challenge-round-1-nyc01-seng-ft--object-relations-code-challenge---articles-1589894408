@@ -1,5 +1,5 @@
-require_relative '.author.rb'
-require_relative '.magazine.rb'
+require_relative './author.rb'
+require_relative './magazine.rb'
 
 class Article
 
@@ -17,6 +17,6 @@ class Article
    def self.all
       @@all
    end
-   
+
 
 end

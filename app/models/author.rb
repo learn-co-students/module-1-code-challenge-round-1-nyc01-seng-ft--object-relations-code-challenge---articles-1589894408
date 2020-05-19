@@ -1,5 +1,5 @@
-require_relative '.article.rb'
-require_relative '.magazine.rb'
+require_relative './article.rb'
+require_relative './magazine.rb'
 
 class Author
   
@@ -10,6 +10,10 @@ class Author
   def initialize(name)
     @name = name
     @@all << self  
+  end
+
+  def self.all
+    @@all
   end
 
   def articles
@@ -25,7 +29,7 @@ class Author
   end
 
   def topic_areas
-    self.magazines.map { |magazine| magazine.category }.uniq!
+    self.magazines.map { |magazine| magazine.category }
   end
 
 end

@@ -29,9 +29,14 @@ class Magazine
 
 end
 
-# gq = Magazine.new("GQ", "mens")
+# - `Magazine.find_by_name(name)`
+#   - Given a string of magazine's name, this method returns the first magazine object that matches
+# - `Magazine#article_titles`
+#   - Returns an array strings of the titles of all articles written for that magazine
+# - `Magazine#contributing_authors`
+#   - Returns an array of authors who have written more than 2 articles for the magazine
 
-#### Magazine
+# #### Magazine
 
 # - `Magazine#contributors`
 #   - Returns an array of Author instances who have written for this magazine

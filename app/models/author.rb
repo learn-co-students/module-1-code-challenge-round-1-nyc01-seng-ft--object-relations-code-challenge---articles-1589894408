@@ -22,9 +22,10 @@ class Author
   end
 
   def topic_areas
+    magazines.map do |magazine_ins|
+      magazine_ins.category 
+    end 
   end
-   
-
 
   
 
@@ -39,7 +40,7 @@ end
 # creates a new Article instance and associates it with that author 
 # and that magazine.
 
-# - `Author#topic_areas`
+# -DONE `Author#topic_areas`
 #   - Returns a **unique** array of strings with the categories of the 
 # magazines the author has contributed to
 

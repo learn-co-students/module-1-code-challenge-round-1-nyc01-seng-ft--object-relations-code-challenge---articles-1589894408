@@ -15,7 +15,7 @@ author1 = Author.new("Pop Smoke")
 author2 = Author.new("Lil Pump")
 
 article = Article.new(author, magazine, "Welcome to party")
-article1 = Article.new(author1, magazine1, "Dior")
+article1 = Article.new(author1, magazine, "Dior")
 article2 = Article.new(author2, magazine2, "Element")
 
 

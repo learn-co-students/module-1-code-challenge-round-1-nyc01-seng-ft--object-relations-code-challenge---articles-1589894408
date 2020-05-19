@@ -16,10 +16,18 @@ class Author
     Article.new(self, magazine, title)
   end
 
-  def topic_areas
-    Article.all.select do |article|
-      article.authors == self
+  def articles 
+    Article.all.select do |article| 
+      article.author == self
+    end
   end
+
+  def topic_areas
+    self.articles.map do |topic|
+      topic.magazine.category
+  end.uniq
+end
+
 
 
 end

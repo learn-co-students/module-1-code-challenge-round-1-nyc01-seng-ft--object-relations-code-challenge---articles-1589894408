@@ -18,6 +18,9 @@ magazine3 = Magazine.new("vogue", "fashion")
 article1 = Article.new(author2,magazine2,"Hello world")
 article2 = Article.new(author1,magazine1,"Hello mundo")
 article3 = Article.new(author3,magazine3,"Hello fashion")
+article4 = Article.new(author1,magazine1,"How to code")
+article5 = Article.new(author1,magazine1,"Hopefully I pass")
+article6 = Article.new(author2,magazine1,"first post")
 
 
 

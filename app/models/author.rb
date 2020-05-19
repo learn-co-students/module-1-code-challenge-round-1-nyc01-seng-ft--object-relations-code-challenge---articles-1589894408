@@ -4,7 +4,11 @@ class Author
   def initialize(name)
     @name = name
     @@all << self
-      ##even tho they are not asking for all author instances as a reader im following single source of truth 
+      ##even tho they are not asking for ALL author instances as a reader method im following single source of truth 
+  end
+
+  def self.all
+    @@all
   end
 
   def articles
@@ -19,5 +23,14 @@ class Author
     end.uniq
   end
 
+  def add_article(magazine, title)
+    Article.new(self,magazine,title)
+  end
+
+  def topic_areas
+    magazines.map do |v|
+      v.category
+    end.uniq
+  end
 
 end

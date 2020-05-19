@@ -25,5 +25,27 @@ class Magazine
     end
   end
 
+  def self.find_by_name(name)
+    self.all.find do |v|
+      v.name == name
+    end
+  end
+
+
+# Returns an array strings of the titles of all articles written for that magazine
+  def article_titles
+    articles.map do |v|
+      v.title
+    end
+  end
+
+  # Returns an array of authors who have written more 
+  # than 2 articles for the magazine
+#   def contributing_authors
+#     contributors.map do |v|
+#       v.name
+#     end
+# end
+
 
 end

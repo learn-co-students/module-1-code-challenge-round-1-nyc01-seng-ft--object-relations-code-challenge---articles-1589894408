@@ -7,6 +7,7 @@ CAR_MAGAZINE = Magazine.new("car magazine", "hobby")
 GAMES_FOR_WINDOWS = Magazine.new("games for windows", "technology")
 
 
+HOW_STUFF_WORKS= Article.new(SHAWN_ELLIOT, CAR_MAGAZINE, "new article")
 HOW_STUFF_WORKS= Article.new(SHAWN_ELLIOT, CAR_MAGAZINE, "how stuff works")
 MY_NEW_CAR = Article.new(SHAWN_ELLIOT, CAR_MAGAZINE, "my new car")
 MY_VACATION = Article.new(SEAN_MALLOY, CAR_MAGAZINE, "my vacation")

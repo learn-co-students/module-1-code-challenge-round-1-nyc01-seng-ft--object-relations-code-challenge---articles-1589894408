@@ -27,8 +27,8 @@ class Magazine
   def contributing_authors
     contributor_article_count
     .select{ |author_and_count|
-      author_and_count.key > 2
-    }
+      author_and_count.values[0] > 2
+  }
   end
 
   # Helper methods

@@ -32,7 +32,7 @@ class Magazine
     count = Hash.new(0)
 
     self.contributors.each do |contributor| 
-      count[contributor] += 1
+      count[contributor.name] += 1
     end
   end
 

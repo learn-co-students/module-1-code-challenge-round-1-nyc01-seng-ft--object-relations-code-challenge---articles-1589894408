@@ -33,5 +33,10 @@ class Author
   ## in the above, the goal was to iterate over the Article array
   ## and select out the magazine for which the author wrote an article - it returns an empty array
 
+  def topic_areas
+  ## ran out of time, this one also hung me up pretty well
+  ## I know that we would need to iterate through Article, and then Magazine, to return the category
+  
+  end
 
 end

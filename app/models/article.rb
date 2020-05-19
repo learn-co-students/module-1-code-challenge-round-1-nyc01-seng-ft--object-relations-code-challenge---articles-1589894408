@@ -1,5 +1,7 @@
 class Article
     attr_reader :author, :magazine, :title
+    # attr_accessor :author, :agazine
+    # just to check something
 
     @@all = []
     def initialize(author, magazine, title)
@@ -14,20 +16,18 @@ class Article
         # Returns an array of all Article instances
         @@all
     end
-    
 
-
-    def author
+    def self.author
         # Returns the author for that given article
         Article.all.find do |article|
             article.title == self
-            article.author
         end
+        # doesn't work
     end
 
-    def magazine
-        Atricle.all.select do |art|
-            art.author
+    def self.magazine
+        Article.all.map do |art|
+            art.magazine
     end.uniq
 end
 end

@@ -12,13 +12,26 @@ class Author
     end
   end
 
-  # def magazines
-  #   Article.all
-  
-  # end
+  def magazines
+    magazine_array =[]
+    Article.all.each do |instance|
+      if instance.author == self
+        magazine_array << instance.magazine
+      end
+    end
+   magazine_array.uniq
+  end
 
   def add_article(magazine, title)
-    New.article(self, magazine, title)
+    Article.new(self, magazine, title)
+  end
+
+  def topic_areas
+    topic_array = []
+    magazines.map do |magazine|
+      topic_array << magazine.category
+    end
+    topic_array.uniq
   end
 
 

@@ -12,9 +12,44 @@ class Magazine
     @@all
   end
 
-  # def contributors
-  
-  # end
+  def contributors
+    contributors_array = []
+    Article.all.each do |article_instance|
+      if article_instance.magazine == self 
+        contributors_array << article_instance.author 
+      end
+    end
+    contributors_array
+  end
 
+  def self.find_by_name(name)
+    Magazine.all.find do |magazine_instance|
+      magazine_instance.name == name 
+    end
+  end
+
+  def article_titles
+    title_array = []
+    Article.all.each do |instance|
+      if instance.magazine == self
+       title_array << instance.title
+      end
+    end
+    title_array
+  end
+
+  def contributor_names
+    contributors.map do |instance|
+      instance.name
+    end
+  end
+
+  def contributing_authors
+    contributors.find_all do |instance|
+      if instance.name.count > 2
+        instance name
+       end
+     end
+   end
 
 end

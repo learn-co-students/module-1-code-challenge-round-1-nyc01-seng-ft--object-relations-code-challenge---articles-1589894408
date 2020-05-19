@@ -34,6 +34,6 @@ class Author
         @area_of_exp.push(article.magazine.category)
       end 
     end 
-    @area_of_exp
+    @area_of_exp.uniq 
   end 
 end 

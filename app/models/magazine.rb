@@ -32,7 +32,7 @@ class Magazine
 
   def article_titles #wooooooo this checks and returns 'tester' which is arttwo title
     Article.all.each do |article| 
-      if article.magazine == self
+      if article.magazine == self || article.magazine == self.name 
         @writ_coll.push(article.title)
       end 
     end 
@@ -40,8 +40,8 @@ class Magazine
   end 
 
   def contributing_authors #going to need to set a counter for appearances in contributors
-    if self.contributors.count > 2 
-      return self.contributors 
+    if self.contributors.count > 2
+      return self.contributors
     else 
       return "This is a new magazine, give us a minute will ya."
     end 

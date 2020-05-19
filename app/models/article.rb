@@ -1,6 +1,6 @@
 require 'pry'
 class Article
-    attr_reader :author, :magazine, :title
+    attr_reader :author, :magazine, :title, :article, :name
 
     @@all = []
 
@@ -13,17 +13,6 @@ class Article
 
     def self.all
         @@all 
-    end
-
-    def author
-        Article.all.map do |article|
-            binding.pry
-            article.author
-        end
-    end
-
-    def magazine
-        # Article.all.
     end
 
 

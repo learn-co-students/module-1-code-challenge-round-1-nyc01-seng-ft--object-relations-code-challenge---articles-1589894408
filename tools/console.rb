@@ -16,6 +16,7 @@ mag1 = Magazine.new("Car and Driver", "Cars")
 mag2 = Magazine.new("MotorTrend", "Cars")
 mag3 = Magazine.new("Guns 'n Ammo", "Guns")
 mag4 = Magazine.new("Boom Daily", "Guns")
+mag5 = Magazine.new("Fishing Life", "Fishing")
 
 art1 = Article.new(author1, mag1, "Lotus")
 art2 = Article.new(author2, mag2, "Jag")

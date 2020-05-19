@@ -13,6 +13,7 @@ mag1 = Magazine.new("campaign", "politics")
 mag2 = Magazine.new("nfl", "sports")
 mag3 = Magazine.new("souflee", "cooking")
 mag4 = Magazine.new("souflee", "hunting")
+mag5 = Magazine.new("nfl", "CBA")
 article1 = Article.new(author1, mag1, "Sanders")
 article2 = Article.new(author1, mag1, "Biden")
 article3 = Article.new(author1, mag1, "Trump")
@@ -28,7 +29,7 @@ article12 = Article.new(author2, mag2, "lottery draft")
 article13 = Article.new(author3, mag5, "1")
 article14 = Article.new(author3, mag5, "changes")
 article15 = Article.new(author3, mag5, "help")
-mag5 = Magazine.new("nfl", "CBA")
+
 
 ### DO NOT REMOVE THIS
 binding.pry

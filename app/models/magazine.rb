@@ -21,15 +21,9 @@ class Magazine
   end
 
   def contributing_authors
-    author_count = Hash.new
-      self.countributors.each do |author|
-    if author_count[author]
-       author_count[author] += 1
-    else
-       author_count[author] = 1
-    end
- end
-   author_count
+    author_count = Hash.new(0)
+    self.countributors.each { |author| author_count[author] += 1 }
+    author_count.select{ |k, v| v > 1}
   end
 
   def self.find_by_name(name)

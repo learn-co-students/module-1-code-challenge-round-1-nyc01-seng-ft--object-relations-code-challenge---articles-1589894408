@@ -1,5 +1,5 @@
 class Article
-attr_accessor :magazine, :author, :title
+attr_reader :magazine, :author, :title
 
 @@all = []
 
@@ -26,3 +26,9 @@ end
 #   - An article **cannot** change its author, magazine, or title after it is has been initialized.
 # -DONE  `Article#title` - Returns the title for that given article
 # -DONE `Article.all` - Returns an array of all Article instances
+
+#### Article
+# - `Article#author`
+#   - Returns the author for that given article
+# - `Article#magazine`
+#   - Returns the magazine for that given article

@@ -33,23 +33,16 @@ class Magazine
   end
   athr
 end
-    def find_by_name(name)
+    def self.find_by_name(name)
     # - `Magazine.find_by_name(name)`
     #   - Given a string of magazine's name, this method returns the first magazine object that matches
       
     
-    # all.find do |mgz| 
-      #   mgz.name==name
-      # end
+   all.find do |mgz| 
+        mgz.name==name
+     end
 
-      #single source of truth!
-      val=nil
-      Article.all.find do |art|
-        art.magazine.name==name
-      end.each do |art| 
-        val=art.magazine
-      end
-      val
+      
     end
 
     def article_titles
@@ -70,9 +63,12 @@ end
     authors=[]
     contributors.each do |cont|
       counter=0
-      cont.each do |cont1|
-       if  cont1==cont
+      i=0
+      while i<contributors.length
+
+       if  cont==contributors[i]
         counter +=1
+        i +=1
       end
     end
       if counter>2

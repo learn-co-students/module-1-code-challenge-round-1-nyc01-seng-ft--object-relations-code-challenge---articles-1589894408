@@ -15,5 +15,4 @@ end
 # - `Author#initialize(name)`
 #   - DONE - An author is initialized with a name, as a string.
 #   - DONE- A name **cannot** be changed after it is initialized.
-# - `DONE Author#name`
-#   - Returns the name of the author
+# - `DONE Author#name` - Returns the name of the author

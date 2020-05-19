@@ -21,8 +21,6 @@ article1 = Article.new(author1, magazine1, "Oprah's Car Give-Away")
 article2 = Article.new(author1, magazine1, "Oprah's Christmas Surprise")
 article3 = Article.new(author1, magazine1, "Oprah's Meditation Guide")
 
-
-
 ### DO NOT REMOVE THIS
 binding.pry
 

@@ -39,9 +39,9 @@ class Magazine
     articles.each do |article|
       arr << article.author  
     end
-    arr  
+    arr.uniq   
     # arr = an array of authors that have written an article for this magazine
-  end 
+  end  
 
   def self.find_by_name(name)
     # given a string of a magazine's name, this method returns the first magazine object that matches

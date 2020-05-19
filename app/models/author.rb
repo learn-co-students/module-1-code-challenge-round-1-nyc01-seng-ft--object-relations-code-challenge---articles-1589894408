@@ -12,5 +12,15 @@ class Author
     @@all
   end 
 
+  def articles #checks 
+    Article.all.select do |article|
+      article.author == self.name 
+    end 
+  end 
+
+  def magazines #works but returns an arrray of articles not an array of magazines so come back later
+    self.articles.uniq
+  end 
+
 
 end

@@ -23,7 +23,8 @@ class Author
 #  Returns a **unique** array of strings 
 # with the categories of the magazines the a
 # uthor has contributed to
-
-
+  arcticles.map do |art|
+   art.magazine.category
+    end.uniq
     end
 end

@@ -21,10 +21,26 @@ class Author
     articles.map{|a| a.magazine}.uniq
   end
 
+  def add_article(magazine, title)
+    Article.new(self, magazine, title)
+  end
+
+  def topic_areas
+    magazines.map{|m| m.category}.uniq
+  end
+
 end
 
 
 # #### Author
+
+# DONE - `Author#add_article(magazine, title)`
+        #   - Given a magazine (as Magazine instance) and a title (as a string), 
+        #   creates a new Article instance and associates it with that author and that magazine.
+
+# DONE - `Author#topic_areas`
+        #   - Returns a **unique** array of strings with the 
+        #   categories of the magazines the author has contributed to
 
 # DONE - `Author#articles` - Returns an array of Article instances the author has written
 

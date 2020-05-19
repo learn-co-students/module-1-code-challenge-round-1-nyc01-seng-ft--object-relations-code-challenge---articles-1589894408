@@ -22,10 +22,12 @@ class Magazine
     self.articles.map do |articles|
       articles.author
     end
+  end
 
-  def self.find_by_name(name_string)
+
+  def self.find_by_name(magazine_name_string)
     Magazine.all.find do |magazines|
-      magazines.name == name_string
+      magazines.name == magazine_name_string
     end
   end
 
@@ -38,8 +40,11 @@ class Magazine
 
 
   def contributing_authors
-    self.articles.select do |article|
+    matching_articles = self.articles.select do |article|
         article.count(author) > 2
+    end
+    matching_articles.map do |articles|
+      articles.author
     end
   end
 

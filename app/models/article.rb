@@ -6,6 +6,7 @@ class Article
         @author = author
         @magazine = magazine
         @title = title
+        Article.all << self
     end
 
     def self.all

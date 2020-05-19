@@ -26,6 +26,9 @@ snacks = Article.new(caitlin, cosmo, "Quick Snacks")
 women = Article.new(phil, newyorker, "Women")
 books = Article.new(phil, newyorker, "Books")
 fiction = Article.new(caitlin, elle, "Fiction Books")
+last = Article.new(christa, vogue, "Last")
+article = Article.new(christa, vogue, "Article")
+
 
 
 

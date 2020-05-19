@@ -27,20 +27,34 @@ class Magazine
       magazine.name == name
     end
   end
-  
+
   def article_titles
+    article_titles = []
     Article.all.select do |article|
       if article.magazine == self
-        article.title
+        article_titles << article.title
       end
     end
+    article_titles
+  end
+
+  def all_contributions
+    contributors = []
+    Article.all.select do |article|
+      if article.magazine == self
+        contributors << article.author
+      end
+    end
+    contributors
   end
 
   def contributing_authors
-    contributing_authors = []
-    if self.articles.count > 2
-      contributing_authors << self
+    contributing_authors = Hash.new(0)
+    all_contributions.each do |contributor|
+      contributing_authors[contributor] += 1
     end
-    contributing authors
+      contributing_authors.select do |contributor, v|
+          v > 2
+      end
   end
 end

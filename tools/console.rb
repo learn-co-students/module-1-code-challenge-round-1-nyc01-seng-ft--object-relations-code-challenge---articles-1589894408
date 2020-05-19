@@ -18,7 +18,7 @@ onion = Magazine.new("Onion", "Category A")
 
 a1 = Article.new(brad, mag, "The Rona")
 a2 = Article.new(anitha, onion, "That man in the White House")
-a3 = Article.new(chloe, pop, "Quarentine Workouts")
+a3 = Article.new(brad, pop, "Quarentine Workouts")
 a4 = Article.new(max, mag, "Bread, Bread, Bread")
 
 

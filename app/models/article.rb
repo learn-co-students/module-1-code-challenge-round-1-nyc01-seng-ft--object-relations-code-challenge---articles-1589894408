@@ -18,7 +18,12 @@ class Article
 end
 
 
+
 # #### Article
+
+# DONE - `Article#author` - Returns the author for that given article
+
+# DONE - `Article#magazine` - Returns the magazine for that given article
 
 # DONE - `Article#initialize(author, magazine, title)`
         #   - An article is initialized with an author as an Author object, 

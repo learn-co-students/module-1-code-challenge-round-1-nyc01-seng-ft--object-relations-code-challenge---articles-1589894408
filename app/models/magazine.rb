@@ -17,8 +17,9 @@ class Magazine
   def contributors
     writers = []
     Article.all.select do |article|
-      article.magazine == self
+      if article.magazine == self
       writers.push(article.author)
+      end
     end
     writers.uniq
   end

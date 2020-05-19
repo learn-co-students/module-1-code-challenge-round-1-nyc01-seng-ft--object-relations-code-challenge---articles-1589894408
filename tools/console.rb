@@ -27,6 +27,7 @@ art7 = Article.new(author2, mag1, "Ford")
 art8 = Article.new(author4, mag1, "Tesla")
 art9 = Article.new(author4, mag1, "Toyota")
 art10 = Article.new(author4, mag1, "Scion")
+art11 = Article.new(author3, mag3, "Boomsticks!")
 
 
 

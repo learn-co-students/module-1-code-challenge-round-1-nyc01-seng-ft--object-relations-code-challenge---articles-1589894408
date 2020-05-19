@@ -1,10 +1,15 @@
-class Author
-  attr_accessor :name
+require_relative '.article.rb'
+require_relative '.magazine.rb'
 
+class Author
+  
+  attr_reader :name
+
+  @@all = []
 
   def initialize(name)
     @name = name
-  
+    @@all << self  
   end
 
 

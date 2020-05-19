@@ -8,9 +8,17 @@ class Magazine
     @@all << self
   end
 
-
   def self.all
     @@all
   end
 
+  def contributors
+    articles.map { |article| article.author }.uniq
+  end
+
+
+  # Helper methods
+  def articles
+    Article.all.select { |article| article.magazine == self }
+  end
 end

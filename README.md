@@ -2,6 +2,7 @@
 
 For this assignment, you will be working with a Magazine domain.
 
+
 We have three models: `Author`, `Article`, and `Magazine`.
 
 For our purposes, an `Author` has many `Article`s, a `Magazine` has many `Article`s, and `Article`s belong to both `Author` and `Magazine`.

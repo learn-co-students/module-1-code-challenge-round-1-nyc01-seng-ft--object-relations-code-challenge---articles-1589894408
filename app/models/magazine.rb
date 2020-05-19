@@ -1,5 +1,5 @@
 class Magazine
-  attr_accessor :name, :category, :author
+  attr_accessor :name, :category, :authors
   @@all = []
 
 
@@ -14,7 +14,7 @@ class Magazine
   end
 
   def contributors
-    Author.all.select {|authors| authors.magazine == self}
+    Author.all.select {|authors| authors.magazines == self}
   end
 
   def self.find_by_name(name)
@@ -22,7 +22,7 @@ class Magazine
   end
 
   def articles
-    Article.all.select {|articles| articles.magazine == self}
+    Article.all.select {|articles| articles.magazines == self}
   end
 
   def article_titles

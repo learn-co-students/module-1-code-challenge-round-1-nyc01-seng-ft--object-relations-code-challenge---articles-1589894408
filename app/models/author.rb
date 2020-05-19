@@ -1,6 +1,6 @@
 class Author
   attr_reader :name
-  attr_accessor :article, :magazine
+  attr_accessor :article, :magazines
   @@all  = []
 
   def initialize(name)
@@ -13,7 +13,7 @@ class Author
   end
 
   def articles
-    Article.all.select {|articles| articles.author== self}
+    Article.all.select {|articles| articles.authors== self}
   end
 
   def add_article(magazine, title)
@@ -21,7 +21,7 @@ class Author
   end
 
   def magazines_not_uniq
-    Magazine.all.select {|magazines| magazines.author == self}
+    Magazine.all.select {|magazines| magazines.authors == self}
   end
 
   def magazines

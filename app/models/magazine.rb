@@ -15,8 +15,26 @@ class Magazine
   end 
   binding.pry
 
+  def contributors
+    Article.all select do |art_ins|
+      art_ins.magazine == self
+    end
+  end 
+
+
+  # def contributors  #2 steps, list mag articles, iterate thru mag articles to find authors
+  # end
+
+
 
 end
+
+# gq = Magazine.new("GQ", "mens")
+
+#### Magazine
+
+# - `Magazine#contributors`
+#   - Returns an array of Author instances who have written for this magazine
 
 
 #### Magazine

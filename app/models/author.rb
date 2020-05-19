@@ -17,9 +17,31 @@ class Author
     end.uniq 
   end
 
-  binding.pry
+  def add_article(magazine, title)
+    Article.new(magazine, self, title)
+  end
+
+  def topic_areas
+  end
+   
+
+
+  
+
+  # binding.pry
 
 end
+
+#### Author
+
+# - `Author#add_article(magazine, title)`
+#   - Given a magazine (as Magazine instance) and a title (as a string), 
+# creates a new Article instance and associates it with that author 
+# and that magazine.
+
+# - `Author#topic_areas`
+#   - Returns a **unique** array of strings with the categories of the 
+# magazines the author has contributed to
 
 
 

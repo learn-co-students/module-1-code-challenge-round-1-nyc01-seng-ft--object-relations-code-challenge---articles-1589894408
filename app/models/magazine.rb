@@ -12,4 +12,12 @@ class Magazine
     @@all
   end
 
+  def articles 
+    # A 'Helper Method' that returns an Array 
+
 end
+
+#### Magazine
+
+- `Magazine#contributors`
+  - Returns an array of Author instances who have written for this magazine

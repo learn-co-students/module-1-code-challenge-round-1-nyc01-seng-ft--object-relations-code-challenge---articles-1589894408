@@ -64,7 +64,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Magazine.all`
   - Returns an array of all Magazine instances -->
 
-#### Article
+<!-- #### Article
 
 - `Article#initialize(author, magazine, title)`
   - An article is initialized with an author as an Author object, a magazine as a Magazine object, and title as a string.
@@ -72,7 +72,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Article#title`
   - Returns the title for that given article
 - `Article.all`
-  - Returns an array of all Article instances
+  - Returns an array of all Article instances -->
 
 ### Object Relationship Methods
 
@@ -83,12 +83,12 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Article#magazine`
   - Returns the magazine for that given article
 
-#### Author
+<!-- #### Author
 
 - `Author#articles`
   - Returns an array of Article instances the author has written
 - `Author#magazines`
-  - Returns a **unique** array of Magazine instances for which the author has contributed to
+  - Returns a **unique** array of Magazine instances for which the author has contributed to -->
 
 #### Magazine
 

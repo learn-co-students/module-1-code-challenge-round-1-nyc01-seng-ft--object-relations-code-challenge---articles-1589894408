@@ -1,3 +1,5 @@
+require 'pry'
+
 class Author
 
   attr_accessor
@@ -11,7 +13,7 @@ class Author
   end
 
   def articles
-    Articles.all.select do |articles_for_author|
+    Article.all.select do |articles_for_author|
       articles_for_author.author == self
     end
   end
@@ -27,7 +29,18 @@ class Author
   end
 
   def topic_areas
-
+    articles.map do |topics|
+      # binding.pry
+      topics.magazine.category
+    end.uniq
   end
+
+  # def magazines_auth
+  #   articles.select do |magazines|
+  #     magazines.author == self
+  #   end
+  # end
+
+  
 
 end

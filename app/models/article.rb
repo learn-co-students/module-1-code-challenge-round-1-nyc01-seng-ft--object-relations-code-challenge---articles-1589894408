@@ -15,4 +15,7 @@ class Article
         @@all
     end
 
+
+
+
 end

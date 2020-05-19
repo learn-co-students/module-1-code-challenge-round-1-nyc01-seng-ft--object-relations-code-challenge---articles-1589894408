@@ -75,5 +75,6 @@ end
         authors << cont.name
       end
     end
+    authors.uniq
   end
 end

@@ -1,11 +1,13 @@
 class Author
-  attr_accessor :name
+  attr_reader :name
 
 
   def initialize(name)
-    @name = name
+    @name = name.to_s
   
   end
+
+
 
 
 end

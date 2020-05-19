@@ -7,7 +7,7 @@ end
 
 ###  WRITE YOUR TEST CODE HERE ###
 
-
+ 
 
 
 
@@ -18,4 +18,6 @@ end
 ### DO NOT REMOVE THIS
 binding.pry
 
-0
+
+#ruby tools/console.rb
+

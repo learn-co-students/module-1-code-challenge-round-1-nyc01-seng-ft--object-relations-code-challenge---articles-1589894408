@@ -12,6 +12,7 @@ For our purposes, an `Author` has many `Article`s, a `Magazine` has many `Articl
 
 ## Topics
 
+
 - Classes and Instances
 - Class and Instance Methods
 - Variable Scope

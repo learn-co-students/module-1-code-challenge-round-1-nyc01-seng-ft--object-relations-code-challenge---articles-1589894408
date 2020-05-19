@@ -26,7 +26,8 @@ class Magazine
   end
 
   def contributing_authors
-    
+    contributors.count >= 2
+    contributors
   end
 
 end

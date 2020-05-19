@@ -1,4 +1,4 @@
 class Article
-
+"hi"
 
 end

@@ -17,6 +17,8 @@ class Author
     Article.new(self,magazine,title)
   end
 
+  #Helper method
+  #return an array of the author's articles from an specific magazine 
   def articles_by_magazine(magazine)
       self.articles.select{|x| x.magazine == magazine}
   end

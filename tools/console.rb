@@ -17,6 +17,8 @@ atl = Magazine.new("The Atlantic", "Literature")
 jgardner = Author.new("John Gardner")
 artone = Article.new("John Gardner", "The Atlantic", "How to write a class lol")
 arttwo = Article.new(jgardner, atl, "tester")
+artthree = Article.new(jgardner, atl, "make it a triple baby")
+
 
 
 

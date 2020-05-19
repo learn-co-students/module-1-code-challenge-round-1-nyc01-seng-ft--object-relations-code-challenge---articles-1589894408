@@ -16,7 +16,7 @@ class Author
 
   def articles #checks 
     Article.all.select do |article|
-      article.author == self.name 
+      article.author == self.name || article.author == self 
     end 
   end 
 

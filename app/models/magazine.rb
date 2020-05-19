@@ -24,7 +24,6 @@ class Magazine
     end
   end
 
-
   def self.find_by_name(magazine_name_string)
     Magazine.all.find do |magazines|
       magazines.name == magazine_name_string
@@ -37,13 +36,10 @@ class Magazine
     end
   end
 
-
-
   def contributing_authors
     self.contributors.select do |authors|
         self.contributors.count(authors) > 2
     end.uniq
   end
-
 
 end

@@ -22,6 +22,13 @@ article6 = Article.new(author2, mag4, "how to souflee and hunt")
 article7 = Article.new(author3, mag2, "niners")
 article8 = author3.add_article(mag2, "a's")
 article9 = author3.add_article(mag2, "baseball")
+article10 = author2.add_article(mag2, "yanks")
+article11 = author2.add_article(mag2, "judge")
+article12 = Article.new(author2, mag2, "lottery draft")
+article13 = Article.new(author3, mag5, "1")
+article14 = Article.new(author3, mag5, "changes")
+article15 = Article.new(author3, mag5, "help")
+mag5 = Magazine.new("nfl", "CBA")
 
 ### DO NOT REMOVE THIS
 binding.pry

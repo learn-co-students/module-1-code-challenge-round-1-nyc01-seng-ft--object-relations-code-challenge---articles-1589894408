@@ -6,13 +6,11 @@ class Author
   
   end
 
-
   def articles
     Article.all.select do |articles|
       articles.author == self
     end
   end
-
 
   def magazines
     self.articles.map do |articles|
@@ -29,7 +27,5 @@ class Author
       magazine.category     
     end.uniq
   end
-
-
 
 end

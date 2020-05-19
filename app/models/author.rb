@@ -12,5 +12,13 @@ class Author
     @@all << self  
   end
 
+  def articles
+    Article.all.select { |article| article.author == self }
+  end
+
+  def magazines
+    self.articles.map { |article| article.magazine }
+  end
+
 
 end

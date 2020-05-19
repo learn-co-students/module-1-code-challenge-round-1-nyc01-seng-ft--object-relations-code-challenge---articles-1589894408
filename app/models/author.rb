@@ -3,11 +3,32 @@ class Author
 
   def initialize(name)
     @name = name
-  
   end
+
+  def articles
+    Article.all.select do |article_instance|
+      article_instance.author == self
+    end 
+  end 
+
+  def magazines
+    articles.map do |article_instance|
+      article_instance.magazine
+    end.uniq 
+  end
+
   binding.pry
 
 end
+
+
+
+#### Author
+
+# - DONE `Author#articles`
+#   - Returns an array of Article instances the author has written
+
+# -DONE `Author#magazines`- Returns a **unique** array of Magazine instances for which the author has contributed to
 
 
 #### Author

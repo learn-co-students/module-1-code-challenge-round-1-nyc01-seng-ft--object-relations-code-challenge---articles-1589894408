@@ -15,6 +15,7 @@ bust = Magazine.new("Bust", "womens")
 wh = Magazine.new("women's health", "womens")
 
 gqarticle = Article.new(gq, jake, "2020 Summer Men's Fashion")
+gqarticle2 = Article.new(gq, jake, "a second GQ article")
 bustarticle = Article.new(bust, jane, "Women in Activism")
 wharticle = Article.new(wh, jake, "20 min Ab Workouts")
 

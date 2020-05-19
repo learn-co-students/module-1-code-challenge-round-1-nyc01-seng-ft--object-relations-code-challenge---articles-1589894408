@@ -8,7 +8,7 @@ end
 ###  WRITE YOUR TEST CODE HERE ###
 a_gary = Author.new("Gary")
 a_grant = Author.new("Grant")
-a_Jeff = Author.new("Jeff")
+a_jeff = Author.new("Jeff")
 
 
 nintendo = Magazine.new("Nintendo","Video Games")
@@ -30,12 +30,15 @@ a_grant.add_article(nintendo,"Ideas for the nintendo new console")
 a_grant.add_article(wired,"Submerge into a new world VR")
 a_grant.add_article(the_coder_corner,"First step into VR Development using Unity")
 
-a_Jeff.add_article(entreprenuer,"How I became my own Boss")
-a_Jeff.add_article(entreprenuer,"Steps to get the atenttion of investors")
-a_Jeff.add_article(entreprenuer,"Tips for Stratups")
-a_Jeff.add_article(forbes,"I am rich, I'll tell you how")
+a_jeff.add_article(entreprenuer,"How I became my own Boss")
+a_jeff.add_article(entreprenuer,"Steps to get the atenttion of investors")
+a_jeff.add_article(entreprenuer,"Tips for Stratups")
+a_jeff.add_article(forbes,"I am rich, I'll tell you how")
+
+
 
 ### DO NOT REMOVE THIS
+
 binding.pry
 
 0
